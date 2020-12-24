@@ -2,8 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
-TWITTER_EMAIL = "rickgoshen"
-TWITTER_PW = "NitL10n$#1"
+TWITTER_EMAIL = "YOUR TWITTER EMAIL"
+TWITTER_PW = "YOUR TWITTER PASSWORD"
 PROMISED_DOWN = 400
 PROMISED_UP = 10
 
