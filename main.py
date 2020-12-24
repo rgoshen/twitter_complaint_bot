@@ -8,4 +8,4 @@ TWITTER_PW = "NitL10n$#1S"
 
 bot = InternetSpeedTwitterBot(CHROME_DRIVER_PATH)
 bot.get_internet_speed()
-bot.tweet_at_provider()
+# bot.tweet_at_provider()

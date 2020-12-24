@@ -1,4 +1,5 @@
 from selenium import webdriver
+import time
 
 
 class InternetSpeedTwitterBot():
@@ -18,7 +19,13 @@ class InternetSpeedTwitterBot():
         """
         Method to get internet speed from site.
         """
-        pass
+        self.driver.get("https://www.speedtest.net/")
+
+        time.sleep(60)
+        self.up = self.driver.find_element_by_xpath(
+            '//*[@id="container"]/div/div[3]/div/div/div/div[2]/div[3]/div[3]/div/div[3]/div/div/div[2]/div[1]/div[2]/div/div[2]/span').text
+        self.down = self.driver.find_element_by_xpath(
+            '//*[@id="container"]/div/div[3]/div/div/div/div[2]/div[3]/div[3]/div/div[3]/div/div/div[2]/div[1]/div[3]/div/div[2]/span').text
 
     def tweet_at_provider(self):
         """
